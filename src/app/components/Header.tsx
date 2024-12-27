@@ -8,12 +8,10 @@ import {CiClock2} from "react-icons/ci";
 import {Modal} from 'flowbite-react';
 import {FaArrowRightLong} from "react-icons/fa6";
 import {RxCross1} from "react-icons/rx";
-
 // Import necessary hooks from React and Next.js
 import {useState, useEffect, useRef} from 'react';
 import Link from "next/link";
 import Image from "next/image";
-import {useRouter} from 'next/navigation';
 import {useLocation} from 'react-router-dom';
 
 function Header() {
