@@ -13,7 +13,8 @@ import {RxCross1} from "react-icons/rx";
 import {useState, useEffect, useRef} from 'react';
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from 'next/navigation';
+import {useRouter} from 'next/navigation';
+import {useLocation} from 'react-router-dom';
 
 function Header() {
     // 👇️ Toggle class on click Show And Hide Menu Bar (Button)
@@ -84,9 +85,9 @@ function Header() {
         setIsSearchExpanded(false);
     };
 
-    const pathname = usePathname();
+    const location = useLocation();
     useEffect(() => {
-        if (pathname === '/search-result') {
+        if (location.pathname === '/search-result') {
             // Preserve search text only on search details page
             const storedSearchText = localStorage.getItem('searchText');
             if (storedSearchText) {
@@ -97,7 +98,7 @@ function Header() {
             setSearchText('');
             localStorage.removeItem('searchText');
         }
-    }, [pathname]);
+    }, [location.pathname]);
 
     const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (e.key === 'Enter') {
@@ -162,9 +163,7 @@ function Header() {
     // Check if the current path is "sitea-contact"
     const shouldDisplay = location.pathname === "/sitea-contact";
 
-    // const [isVisibleTwo, setIsVisibleTwo] = useState(true);
-    const [isVisibleTwo] = useState(true);
-
+    const [isVisibleTwo, setIsVisibleTwo] = useState(true);
     // Check if the current path is "sitea-contact"
     const shouldDisplayTwo = location.pathname === "/sitea-contact";
     return (
