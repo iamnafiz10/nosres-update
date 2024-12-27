@@ -15,7 +15,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
 
-function Page() {
+function Header() {
     // 👇️ Toggle class on click Show And Hide Menu Bar (Button)
     const [isMenuVisible, setMenuVisible] = useState(false);
     const handleClick = () => {
@@ -946,4 +946,4 @@ function Page() {
         ;
 }
 
-export default Page;
+export default Header;
