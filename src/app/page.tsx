@@ -1,5 +1,5 @@
 "use client"
-import {BrowserRouter, Router, Routes, Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Homepage from './pages/home/page'
 import Header from "@/app/components/header/page";
 
