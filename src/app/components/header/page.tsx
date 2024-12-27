@@ -13,7 +13,7 @@ import {RxCross1} from "react-icons/rx";
 import {useState, useEffect, useRef} from 'react';
 import Link from "next/link";
 import Image from "next/image";
-import {useRouter} from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 function Page() {
     // 👇️ Toggle class on click Show And Hide Menu Bar (Button)
@@ -84,9 +84,9 @@ function Page() {
         setIsSearchExpanded(false);
     };
 
-    const router = useRouter();
+    const pathname = usePathname();
     useEffect(() => {
-        if (router.pathname === '/search-result') {
+        if (pathname === '/search-result') {
             // Preserve search text only on search details page
             const storedSearchText = localStorage.getItem('searchText');
             if (storedSearchText) {
@@ -97,7 +97,7 @@ function Page() {
             setSearchText('');
             localStorage.removeItem('searchText');
         }
-    }, [router.pathname]);
+    }, [pathname]);
 
     const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (e.key === 'Enter') {
