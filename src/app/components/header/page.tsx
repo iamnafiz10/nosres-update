@@ -11,7 +11,8 @@ import {RxCross1} from "react-icons/rx";
 import {useState, useEffect, useRef} from 'react';
 import Link from "next/link";
 import Image from "next/image";
-import {useLocation} from 'react-router-dom';
+
+// import {useLocation} from 'react-router-dom';
 
 function Header() {
     // 👇️ Toggle class on click Show And Hide Menu Bar (Button)
@@ -82,9 +83,11 @@ function Header() {
         setIsSearchExpanded(false);
     };
 
-    const location = useLocation();
+    // const location = useLocation();
+
     useEffect(() => {
-        if (location.pathname === '/search-result') {
+        const pathname = window.location.pathname;
+        if (pathname === '/search-result') {
             // Preserve search text only on search details page
             const storedSearchText = localStorage.getItem('searchText');
             if (storedSearchText) {
@@ -95,7 +98,7 @@ function Header() {
             setSearchText('');
             localStorage.removeItem('searchText');
         }
-    }, [location.pathname]);
+    }, []);
 
     const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (e.key === 'Enter') {
@@ -115,7 +118,8 @@ function Header() {
     const [isMobileSearchExpanded, setIsMobileSearchExpanded] = useState(false);
     const mobileInputRef = useRef<HTMLInputElement>(null);
     useEffect(() => {
-        if (location.pathname === '/search-result') {
+        const pathname = window.location.pathname;
+        if (pathname === '/search-result') {
             // Preserve search text only on search details page
             const storedSearchText = localStorage.getItem('mobileSearchText');
             if (storedSearchText) {
@@ -126,7 +130,7 @@ function Header() {
             setMobileSearchText('');
             localStorage.removeItem('mobileSearchText');
         }
-    }, [location.pathname]);
+    }, []);
 
 
     const handleMobileSearchExpandedClick = () => {
@@ -158,11 +162,20 @@ function Header() {
         setIsVisible(false); // This will hide the acc_wrap div
     };
     // Check if the current path is "sitea-contact"
-    const shouldDisplay = location.pathname === "/sitea-contact";
+    const [shouldDisplay, setShouldDisplay] = useState(false);
+    useEffect(() => {
+        const currentPath = window.location.pathname;
+        setShouldDisplay(currentPath === "/sitea-contact");
+    }, []);
 
     const [isVisibleTwo] = useState(true);
+
     // Check if the current path is "sitea-contact"
-    const shouldDisplayTwo = location.pathname === "/sitea-contact";
+    const [shouldDisplayTwo, setshouldDisplayTwo] = useState(false);
+    useEffect(() => {
+        const currentPath = window.location.pathname;
+        setShouldDisplay(currentPath === "/sitea-contact");
+    }, []);
     return (
         <>
             <section id="header-section" className="relative">
