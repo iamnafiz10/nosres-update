@@ -164,8 +164,13 @@ function Header() {
     // Check if the current path is "sitea-contact"
     const [shouldDisplay, setShouldDisplay] = useState(false);
     useEffect(() => {
+        // Example: Set shouldDisplay based on some condition
         const currentPath = window.location.pathname;
-        setShouldDisplay(currentPath === "/sitea-contact");
+        if (currentPath === '/sitea-contact') {
+            setShouldDisplay(true);  // State is updated when the path matches
+        } else {
+            setShouldDisplay(false);  // State is updated otherwise
+        }
     }, []);
 
     const [isVisibleTwo] = useState(true);
@@ -173,8 +178,13 @@ function Header() {
     // Check if the current path is "sitea-contact"
     const [shouldDisplayTwo, setshouldDisplayTwo] = useState(false);
     useEffect(() => {
+        // Example: Set shouldDisplayTwo based on some condition
         const currentPath = window.location.pathname;
-        setShouldDisplay(currentPath === "/sitea-contact");
+        if (currentPath === '/sitea-contact') {
+            setshouldDisplayTwo(true);
+        } else {
+            setshouldDisplayTwo(false);
+        }
     }, []);
     return (
         <>
