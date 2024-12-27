@@ -1,17 +1,17 @@
 "use client"
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from './pages/home/page'
 import Header from "@/app/components/header/page";
 
 export default function Home() {
     return (
         <>
-            <BrowserRouter>
+            <Router>
                 <Header/>
                 <Routes>
                     <Route path="/" element={<Homepage/>}/>
                 </Routes>
-            </BrowserRouter>
+            </Router>
         </>
     );
 }
