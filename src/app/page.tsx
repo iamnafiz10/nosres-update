@@ -1,10 +1,9 @@
-// import Header from './components/Header';
+import Build from './components/build/page';
+
 export default function Home() {
     return (
         <>
-            <div>
-                hello
-            </div>
+            <Build/>
         </>
     );
 }
