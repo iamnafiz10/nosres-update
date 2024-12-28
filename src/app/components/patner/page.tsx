@@ -4,7 +4,7 @@ import Image from "next/image";
 function Page() {
     return (
         <>
-            <section id="patner-section" className="mt-14">
+            <section id="patner-section" className="mt-10">
                 <div className="container py-10 px-5">
                     <div className="head-wrap text-start">
                         <h1 className="font-semibold text-[24px]">

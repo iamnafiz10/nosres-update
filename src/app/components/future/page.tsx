@@ -7,11 +7,11 @@ function Page() {
     return (
         <>
             <section id="future-section">
-                <div className="container">
+                <div className="container mt-10">
                     <div className="relative future-section overflow-hidden rounded-xl p-10">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                             <div className="col">
-                                <Image src="/assets/images/future-team.jpg" width={1000} height={500}
+                                <Image data-aos="zoom-in" data-aos-duration="500" src="/assets/images/future-team.jpg" width={1000} height={500}
                                        className="rounded-xl"
                                        alt="helloImg"/>
                             </div>

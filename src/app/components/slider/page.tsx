@@ -17,7 +17,7 @@ function Page() {
     return (
         <>
             <section id="slider-section">
-                <div className="container">
+                <div className="container mt-9">
                     <div className="slider_wrap">
                         <Swiper
                             spaceBetween={50}
