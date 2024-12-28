@@ -16,7 +16,7 @@ function Page() {
                                     <span className="text-primary"> steps</span>
                                 </h1>
                                 <p className="mt-2 text-[#ABABAB] text-[16px]">
-                                    It's quick, easy, and hassle-free!
+                                    It{`'`}s quick, easy, and hassle-free!
                                 </p>
                             </div>
                             <div className="pl-[18px]">
