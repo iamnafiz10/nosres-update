@@ -5,7 +5,7 @@ function Page() {
     return (
         <>
             <section id="patner-section" className="mt-14">
-                <div className="container py-10 px-0">
+                <div className="container py-10 px-5">
                     <div className="head-wrap text-start">
                         <h1 className="font-semibold text-[24px]">
                               <span className="text-[#3A5F8A]">

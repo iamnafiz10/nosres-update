@@ -45,6 +45,7 @@ body {
 }
 
 .slider_wrap {
+    border-radius: 10px;
     padding-top: 40px;
     padding-bottom: 25px;
     padding-left: 50px;
@@ -52,8 +53,16 @@ body {
     height: 100%;
     background-image: linear-gradient(
             to right,
-            rgba(218, 226, 249, 0.72) 0%,
+            rgba(60, 96, 136, 0.25) 0%,
             rgba(218, 226, 249, 0.25) 100%
+    );
+}
+
+.right_image_hello {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(169, 169, 169, 0.30) 0%,
+            rgba(218, 226, 249, 0.30) 100%
     );
 }
 

@@ -19,7 +19,7 @@ function Page() {
                                 <h2 className="text-[18px] font-semibold text-black">
                                     Build the future with Nosres
                                 </h2>
-                                <h4 className="text-[14px] text-prgcolor">
+                                <h4 className="text-[16px] text-prgcolor mt-1">
                                     Join a team dedicated to innovation, creativity,
                                     and impact. Explore opportunities to grow,
                                     connect, and make a difference with us.

@@ -75,7 +75,7 @@ function Page() {
                             </div>
                         </div>
                         <div className="col">
-                            <div className="right_image rounded-xl bg-[#DAE2F9] bg-opacity-[30%] p-10 pr-0">
+                            <div className="right_image_hello rounded-xl p-10 pr-0">
                                 <Image src="/assets/images/hello.jpg" width={1000} height={500} className="rounded"
                                        alt="helloImg"/>
                             </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from "next/image";
+import Link from "next/link";
 
 function Page() {
     return (
@@ -28,25 +29,25 @@ function Page() {
                             <div data-aos="zoom-in"
                                  className="col group box py-2 border border-primary rounded-lg items-center justify-center flex flex-col">
                                 <Image src="/assets/images/build1.png" width={1000} height={500}
-                                       className="w-[100px] group-hover:scale-125" alt="buildImg1"/>
+                                       className="w-[100px] relative z-10 cursor-pointer" alt="buildImg1"/>
                             </div>
 
                             <div data-aos="zoom-in"
                                  className="col group box py-2 border border-primary rounded-lg items-center justify-center flex flex-col">
                                 <Image src="/assets/images/build2.png" width={1000} height={500}
-                                       className="w-[100px] group-hover:scale-125" alt="buildImg2"/>
+                                       className="w-[100px] relative z-10 cursor-pointer" alt="buildImg2"/>
                             </div>
 
                             <div data-aos="zoom-in"
                                  className="col group box py-2 border border-primary rounded-lg items-center justify-center flex flex-col">
                                 <Image src="/assets/images/build3.png" width={1000} height={500}
-                                       className="w-[100px] group-hover:scale-125" alt="buildImg3"/>
+                                       className="w-[100px] relative z-10 cursor-pointer" alt="buildImg3"/>
                             </div>
 
                             <div data-aos="zoom-in"
                                  className="col group box py-2 border border-primary rounded-lg items-center justify-center flex flex-col">
                                 <Image src="/assets/images/build4.png" width={1000} height={500}
-                                       className="w-[100px] group-hover:scale-125" alt="buildImg4"/>
+                                       className="w-[100px] relative z-10 cursor-pointer" alt="buildImg4"/>
                             </div>
                         </div>
                     </div>

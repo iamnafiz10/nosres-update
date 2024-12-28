@@ -6,6 +6,7 @@ import Patner from '../../components/patner/page'
 import Slider from '../../components/slider/page'
 import Join from '../../components/join/page'
 import Future from '../../components/future/page'
+import WorkWith from '../../components/workwith/page'
 
 function Page() {
     return (
@@ -16,6 +17,7 @@ function Page() {
             <Slider/>
             <Join/>
             <Future/>
+            <WorkWith/>
         </>
     );
 }
