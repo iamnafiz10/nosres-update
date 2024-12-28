@@ -6,7 +6,7 @@ function Page() {
         <>
             <section id="build-section">
                 <div className="container pt-16">
-                    <div className="relative overflow-hidden rounded p-10">
+                    <div className="relative overflow-hidden rounded-xl p-10">
                         {/* Overlay */}
                         <div
                             className="absolute inset-0 bg-gradient-to-r from-[#8BCAE8] to-[#DAE2F9] opacity-[30%] z-10"></div>

@@ -69,13 +69,13 @@ function Page() {
                             </div>
                             <div className="button_area mt-10">
                                 <button type='button'
-                                        className="py-1 px-6 ext-white bg-primary hover:bg-[#FAFAFA] hover:text-primary border hover:border-[#FAFAFA]  text-[14px] text-white rounded">
+                                        className="py-2 px-6 ext-white bg-primary hover:bg-[#3A5F8A] hover:text-white border hover:border-[#FAFAFA]  text-[14px] text-white rounded">
                                     Try Blends
                                 </button>
                             </div>
                         </div>
                         <div className="col">
-                            <div className="right_image rounded-lg bg-[#DAE2F9] bg-opacity-[30%] p-10 pr-0">
+                            <div className="right_image rounded-xl bg-[#DAE2F9] bg-opacity-[30%] p-10 pr-0">
                                 <Image src="/assets/images/hello.jpg" width={1000} height={500} className="rounded"
                                        alt="helloImg"/>
                             </div>

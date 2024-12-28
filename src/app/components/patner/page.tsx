@@ -5,7 +5,7 @@ function Page() {
     return (
         <>
             <section id="patner-section" className="mt-14">
-                <div className="container py-10">
+                <div className="container py-10 px-0">
                     <div className="head-wrap text-start">
                         <h1 className="font-semibold text-[24px]">
                               <span className="text-[#3A5F8A]">
@@ -23,7 +23,7 @@ function Page() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
                         <div data-aos="zoom-in" data-aos-duration="1000"
-                             className="card_box col image-box py-10 px-8 flex flex-col justify-center rounded-md relative overflow-hidden">
+                             className="card_box col image-box py-10 px-8 flex flex-col justify-center rounded-xl relative overflow-hidden">
                             {/* Overlay */}
                             <div
                                 className="absolute inset-0 bg-gradient-to-b from-[#009045] to-[#DAE2F9] opacity-[30%] z-10"></div>
@@ -40,7 +40,7 @@ function Page() {
                         </div>
 
                         <div data-aos="zoom-in" data-aos-duration="1000"
-                             className="card_box col image-box py-10 px-8 flex flex-col justify-center rounded-md relative overflow-hidden">
+                             className="card_box col image-box py-10 px-8 flex flex-col justify-center rounded-xl relative overflow-hidden">
                             {/* Overlay */}
                             <div
                                 className="absolute inset-0 bg-gradient-to-b from-[#29A9E0] to-[#DAE2F9] opacity-[30%] z-10"></div>
@@ -59,7 +59,7 @@ function Page() {
                         </div>
 
                         <div data-aos="zoom-in" data-aos-duration="1000"
-                             className="card_box col image-box py-10 px-8 flex flex-col justify-center rounded-md relative overflow-hidden">
+                             className="card_box col image-box py-10 px-8 flex flex-col justify-center rounded-xl relative overflow-hidden">
                             {/* Overlay */}
                             <div
                                 className="absolute inset-0 bg-gradient-to-b from-[#00FFFF] to-[#DAE2F9] opacity-[30%] z-10"></div>

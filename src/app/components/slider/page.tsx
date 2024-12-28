@@ -27,7 +27,7 @@ function Page() {
                             dynamicBullets: true,
                         }}
                         autoplay={{
-                            delay: 2500,
+                            delay: 10000,
                             disableOnInteraction: false,
                         }}
                         navigation={{

@@ -8,7 +8,7 @@ function Page() {
         <>
             <section id="future-section">
                 <div className="container">
-                    <div className="relative future-section overflow-hidden rounded p-10">
+                    <div className="relative future-section overflow-hidden rounded-xl p-10">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                             <div className="col">
                                 <Image src="/assets/images/future-team.jpg" width={1000} height={500}
