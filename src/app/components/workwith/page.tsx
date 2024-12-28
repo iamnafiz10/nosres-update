@@ -8,28 +8,6 @@ function Page() {
         <>
             <section id="work-with-section">
                 <div className="container pt-12">
-                    <div className="head-wrap">
-                        <h1 className="font-semibold text-[24px]">
-                            Work with us
-                        </h1>
-                        <p className="mt-3 text-gray-500 text-[16px]">
-                            At Nosres, we attach great importance to an inclusive workplace where everyone has
-                            a<br/> voice
-                            and the opportunity to succeed.
-                            Come join us as we scale up our business activities!<br/> Visit our careers page to view our
-                            current job opportunities.
-                        </p>
-
-                        <div
-                            className="mt-4 flex cursor-pointer items-center gap-1 justify-start text-primary hover:text-[#3A5F8A]">
-                            <HiOutlineArrowRightCircle size={30}/>
-                            <Link href='/'
-                                  className="text-[14px]">
-                                Learn More
-                            </Link>
-                        </div>
-                    </div>
-
                     <h1 className="mt-10 font-semibold text-[24px]">The latest posts from our blog</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
                         <div data-aos="zoom-in" data-aos-duration="1000"

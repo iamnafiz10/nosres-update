@@ -17,7 +17,7 @@ function Page() {
                         <p className="mt-3 text-[#ABABAB] text-[16px]">
                             Whether you’re connecting with like-minded buyers and sellers, finding your next great deal,
                             or<br/>
-                            turning unused items into income, Nosres Blens makes the process seamless and rewarding.
+                            turning unused items into income, Nosres Blends makes the process seamless and rewarding.
                         </p>
                     </div>
 

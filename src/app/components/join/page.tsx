@@ -6,7 +6,7 @@ function Page() {
         <>
             <section id="join-section" className="bg-white">
                 <div className="container py-10">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 items-end gap-8 mt-6">
                         <div className="col">
                             <div className="head-wrap text-start pb-8">
                                 <h1 className="font-semibold text-[24px]">
@@ -16,12 +16,11 @@ function Page() {
                                     <span className="text-primary"> steps</span>
                                 </h1>
                                 <p className="mt-2 text-[#ABABAB] text-[16px]">
-                                    Join Blends Blends is quick, easy, and<br/>
-                                    hassle-free!
+                                    It's quick, easy, and hassle-free!
                                 </p>
                             </div>
                             <div className="pl-[18px]">
-                                <ol className="relative h-full sm:h-[217px] md:h-[228px] lg:h-[192px] mb-[90px] border-l-2 border-primary">
+                                <ol className="relative h-full sm:h-[217px] md:h-[228px] lg:h-[192px] mb-[80px] border-l-2 border-primary">
                                     {/* Timeline Item 1 */}
                                     <li className="mb-10 ml-8">
                                     <span
@@ -76,7 +75,8 @@ function Page() {
                         </div>
                         <div className="col">
                             <div className="right_image_hello rounded-xl p-10 pr-0">
-                                <Image src="/assets/images/hello.jpg" width={1000} height={500} className="rounded"
+                                <Image src="/assets/images/hello.jpg" width={1000} height={500}
+                                       className="rounded-xl rounded-r-none"
                                        alt="helloImg"/>
                             </div>
                         </div>

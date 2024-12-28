@@ -9,7 +9,7 @@ function Page() {
                     <div className="relative overflow-hidden rounded-xl p-10">
                         {/* Overlay */}
                         <div
-                            className="absolute inset-0 bg-gradient-to-r from-[#8BCAE8] to-[#DAE2F9] opacity-[30%] z-10"></div>
+                            className="absolute inset-0 bg-gradient-to-r from-[#A9A9A9] to-[#DAE2F9] opacity-[30%] z-10"></div>
                         <div className="head-wrap text-center">
                             <h1 className="font-semibold text-[24px]">
                                 We build products and services to boost businesses growth.
